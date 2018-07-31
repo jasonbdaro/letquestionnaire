@@ -1,0 +1,49 @@
+html, body {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+
+span.dirty-field {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #dc3545  transparent transparent #dc3545;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: top;
+}
